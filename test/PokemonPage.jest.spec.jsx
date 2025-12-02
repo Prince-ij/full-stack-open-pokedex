@@ -113,11 +113,11 @@ describe("<PokemonPage />", () => {
       );
     });
 
-    expect(screen.getByText("Previous")).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "Previous" })).toHaveAttribute(
       "href",
       "/pokemon/ditto"
     );
-    expect(screen.getByText("Next")).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "Next" })).toHaveAttribute(
       "href",
       "/pokemon/vaporeon"
     );
